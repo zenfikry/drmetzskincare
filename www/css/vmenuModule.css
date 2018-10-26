@@ -1,0 +1,47 @@
+.u-vmenu ul li {
+	width: 100%;
+	list-style: none;
+}
+.u-vmenu ul ul{
+	display: none;
+}
+.u-vmenu > ul > li {
+	background-color: white;
+	background-size: 100% auto;
+	border:1px solid #e0e0e0;
+}
+.u-vmenu ul li a {
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	font-size: 14px;
+	color: #82846f;
+	text-decoration: none;
+	outline: none;
+}
+.u-vmenu > ul > li > a {
+	height: 42px;
+	line-height: 42px;
+	padding-left: 10px;
+}
+.u-vmenu > ul > li > ul > li > a {
+	height: 42px;
+	line-height: 42px;
+	padding-left: 60px;
+}
+.u-vmenu > ul > li > ul > li > ul > li > a {
+	height: 42px;
+	line-height: 42px;
+	padding-left: 80px;
+}
+.u-vmenu > ul > li > ul > li > ul > li > ul > li > a {
+	height: 42px;
+	line-height: 42px;
+	padding-left: 100px;
+}
+.u-vmenu ul li a[data-option='on']{
+	background: url(../image/vmenu/on.png) right center no-repeat;
+}
+.u-vmenu ul li a[data-option='off'] {
+	background: url(../image/vmenu/off.png) right center no-repeat;
+}

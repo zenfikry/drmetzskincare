@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/webfont.js"></script>
+  <script>WebFont.load({google:{families: ["Montserrat:400,700"]}}); </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+
+  <style>
+  .logo-login {
+      height: 95%;
+      background-image: url('image/logo.png');
+      background-position: 50% 50%;
+      background-size: 121px;
+      background-repeat: no-repeat
+  }
+  #loader {
+      position: absolute;
+      top: calc(50% - 20px);
+      left: calc(50% - 20px);
+  }
+  @keyframes loader {
+      0% { left: -100px }
+      100% { left: 100%; }
+  }
+  #box {
+      width: 30px;
+      height: 30px;
+      margin-top: 60px;
+      background: #2eb5ed; /* Old browsers */
+      background-position: 50% 50%;
+      z-index: 999999;
+      animation: animate .5s linear infinite;
+      position: fixed;
+      top: 10;
+      left: -50;
+      border-radius: 3px;
+      margin-left: 5px;
+  }
+  @keyframes animate {
+      17% { border-bottom-right-radius: 3px; }
+      25% { transform: translateY(9px) rotate(22.5deg); }
+      50% {
+        transform: translateY(18px) scale(1,.9) rotate(45deg) ;
+        border-bottom-right-radius: 40px;
+      }
+      75% { transform: translateY(9px) rotate(67.5deg); }
+      100% { transform: translateY(0) rotate(90deg); }
+  }
+  #shadow {
+      width: 40px;
+      height: 5px;
+      background: #000;
+      background-position: 50% 50%;
+      opacity: 0.1;
+      position: fixed;
+      z-index: 999999;
+      top: 10;
+      left: -100;
+      margin-top:98px;
+      margin-left: -2px;
+      border-radius: 50%;
+      animation: shadow .5s linear infinite;
+  }
+    @keyframes shadow {
+      50% {
+        transform: scale(1.2,1);
+      }
+  }
+
+  }
+  </style>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69350835-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+    function home() {
+        window.location.replace("home.html")
+    }
+
+    function masuk() {
+        setTimeout(function() {
+            home()
+        }, 7e3)
+    }
+</script>
+</head>
+
+<body>
+  <body onload=masuk() oncontextmenu=return!1 ondragstart=return!1>
+    <section class="w-section mobile-wrapper">
+      <a href=javascript:home();>
+          <div class="page-content" id="main-stack" data-scroll="0">
+            <div class="logo-login"></div>
+            <div class="bottom-section padding">
+            </div>
+            <div id="loader">
+                <div id="shadow"></div>
+                <div id="box"></div>
+              </div>
+          </div>
+          
+      </a>
+    </section>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/framework.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

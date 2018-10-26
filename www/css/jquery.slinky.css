@@ -1,0 +1,89 @@
+/* Required styles; changing these may break the menu */
+
+.slinky-menu {
+	overflow: hidden;
+	transform: translateZ(0);
+	transition: all 300ms ease;
+}
+
+.slinky-menu > ul {
+	left: 0;
+	position: relative;
+	transform: translateZ(0);
+	transition: all 300ms ease;
+}
+
+.slinky-menu ul,
+.slinky-menu li {
+	list-style: none;
+	margin: 0;
+	border-bottom:1px solid #F3F3F3;
+}
+
+.slinky-menu ul {
+	width: 100%;
+}
+
+.slinky-menu a {
+	display: block;
+}
+
+.slinky-menu li ul {
+	display: none;
+	left: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.slinky-menu .header {
+	position: relative;
+}
+
+.slinky-menu h2 ~ a.back {
+	left: 0;
+	position: absolute;
+	top: 0;
+}
+
+.slinky-menu h2 {
+	font-size: 1em;
+	margin: 0;
+	text-align: center;
+}
+
+/* Default theme */
+
+.slinky-menu {
+	background: white;
+}
+
+.slinky-menu h2 {
+	color:#686868 ;
+	padding: 1em;
+}
+
+.slinky-menu li {
+	line-height: 1;
+}
+
+.slinky-menu a {
+	border: none;
+	color: #686868;
+	padding: 1em;
+}
+
+.slinky-menu a:hover {
+	background: #F3F3F3;
+}
+
+.slinky-menu a.next:after {
+	content: '\276f';
+	margin-left: 1em;
+	float: right;
+}
+
+.slinky-menu a.back:before {
+	content: '\276e';
+	margin-right: 1em;
+	float: left;
+}
